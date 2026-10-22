@@ -1549,4 +1549,27 @@ body[data-view="leaving"] .door-landing .store-scene { inset: 0 !important; }
     white-space: normal;
   }
 }
+/* VOID — Favorite hearts */
+.favorite-btn {
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  font-size: 27px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
 
+.favorite-btn:hover {
+  transform: scale(1.12);
+}
+
+.favorite-btn.is-favorite {
+  color: #ff2d45;
+}
+
+.favorite-btn:focus-visible {
+  outline: 2px solid #ff2d45;
+  outline-offset: 3px;
+}
