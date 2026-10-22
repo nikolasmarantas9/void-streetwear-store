@@ -1,18 +1,18 @@
 const products = [
-  {id:1,name:"VOID Graphic Pants 01",type:"PANTS",category:"clothing",price:64,image:"clothes/PANTS-1.jpg",tag:"NEW DROP",color:"#343a34"},
-  {id:2,name:"VOID Graphic Pants 02",type:"PANTS",category:"clothing",price:68,image:"clothes/PANTS-2.jpg",tag:"",color:"#38303b"},
-  {id:3,name:"VOID Graphic Pants 03",type:"PANTS",category:"clothing",price:62,image:"clothes/PANTS-3.jpg",tag:"",color:"#343a43"},
-  {id:4,name:"VOID Graphic Pants 04",type:"PANTS",category:"clothing",price:66,image:"clothes/PANTS-4.jpg",tag:"LIMITED",color:"#37302c"},
-  {id:5,name:"VOID Graphic Pants 05",type:"PANTS",category:"clothing",price:64,image:"clothes/PANTS-5.jpg",tag:"",color:"#303743"},
-  {id:6,name:"VOID Graphic Tee 01",type:"T-SHIRT",category:"clothing",price:34,image:"clothes/T-SHIRT-1.jpg",tag:"BESTSELLER",color:"#343a34"},
-  {id:7,name:"VOID Graphic Tee 02",type:"T-SHIRT",category:"clothing",price:36,image:"clothes/T-SHIRT-2.jpg",tag:"",color:"#38303b"},
-  {id:8,name:"VOID Graphic Tee 03",type:"T-SHIRT",category:"clothing",price:38,image:"clothes/T-SHIRT-3.jpg",tag:"",color:"#343a43"},
-  {id:9,name:"VOID Graphic Tee 04",type:"T-SHIRT",category:"clothing",price:35,image:"clothes/T-SHIRT-4.jpg",tag:"NEW DROP",color:"#37302c"},
-  {id:10,name:"VOID Graphic Tee 05",type:"T-SHIRT",category:"clothing",price:34,image:"clothes/T-SHIRT-5.jpg",tag:"",color:"#303743"},
-  {id:11,name:"VOID Sneaker 01",type:"SNEAKERS",category:"shoes",price:110,image:"SNEAKERS/SHOES-1.jpg",tag:"NEW DROP",color:"#303743"},
-  {id:12,name:"VOID Sneaker 02",type:"SNEAKERS",category:"shoes",price:95,image:"SNEAKERS/SHOES-2.jpg",tag:"",color:"#393439"},
-  {id:13,name:"VOID Sneaker 03",type:"SNEAKERS",category:"shoes",price:125,image:"SNEAKERS/SHOES-3.jpg",tag:"LIMITED",color:"#39332b"},
-  {id:14,name:"VOID Sneaker 04",type:"SNEAKERS",category:"shoes",price:99,image:"SNEAKERS/SHOES-4.jpg",tag:"",color:"#2c3938"}
+  {id:1,name:"VOID Graphic Pants 01",type:"PANTS",category:"clothing",price:64,image:"PANTS-1.jpg",tag:"NEW DROP",color:"#343a34"},
+  {id:2,name:"VOID Graphic Pants 02",type:"PANTS",category:"clothing",price:68,image:"PANTS-2.jpg",tag:"",color:"#38303b"},
+  {id:3,name:"VOID Graphic Pants 03",type:"PANTS",category:"clothing",price:62,image:"PANTS-3.jpg",tag:"",color:"#343a43"},
+  {id:4,name:"VOID Graphic Pants 04",type:"PANTS",category:"clothing",price:66,image:"PANTS-4.jpg",tag:"LIMITED",color:"#37302c"},
+  {id:5,name:"VOID Graphic Pants 05",type:"PANTS",category:"clothing",price:64,image:"PANTS-5.jpg",tag:"",color:"#303743"},
+  {id:6,name:"VOID Graphic Tee 01",type:"T-SHIRT",category:"clothing",price:34,image:"T-SHIRT-1.jpg",tag:"BESTSELLER",color:"#343a34"},
+  {id:7,name:"VOID Graphic Tee 02",type:"T-SHIRT",category:"clothing",price:36,image:"T-SHIRT-2.jpg",tag:"",color:"#38303b"},
+  {id:8,name:"VOID Graphic Tee 03",type:"T-SHIRT",category:"clothing",price:38,image:"T-SHIRT-3.jpg",tag:"",color:"#343a43"},
+  {id:9,name:"VOID Graphic Tee 04",type:"T-SHIRT",category:"clothing",price:35,image:"T-SHIRT-4.jpg",tag:"NEW DROP",color:"#37302c"},
+  {id:10,name:"VOID Graphic Tee 05",type:"T-SHIRT",category:"clothing",price:34,image:"T-SHIRT-5.jpg",tag:"",color:"#303743"},
+  {id:11,name:"VOID Sneaker 01",type:"SNEAKERS",category:"shoes",price:110,image:"SHOES-1.jpg",tag:"NEW DROP",color:"#303743"},
+  {id:12,name:"VOID Sneaker 02",type:"SNEAKERS",category:"shoes",price:95,image:"SHOES-2.jpg",tag:"",color:"#393439"},
+  {id:13,name:"VOID Sneaker 03",type:"SNEAKERS",category:"shoes",price:125,image:"SHOES-3.jpg",tag:"LIMITED",color:"#39332b"},
+  {id:14,name:"VOID Sneaker 04",type:"SNEAKERS",category:"shoes",price:99,image:"SHOES-4.jpg",tag:"",color:"#2c3938"}
 ];
 
 const STORAGE_KEYS = { cart: "void-store-cart-v1", favorites: "void-store-favorites-v1", reviews: "void-store-reviews-v1" };
