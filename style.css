@@ -1468,3 +1468,39 @@ body[data-view="leaving"] .door-landing .store-scene { inset: 0 !important; }
 .cart-item-name{line-height:1.4}
 .remove-btn{padding:8px 0 8px 5px}
 @media(max-width:520px){.favorite-btn{width:32px;height:32px;top:8px;right:8px;font-size:16px}.filters{width:100%}.filter{padding:9px 10px}.cart-item{grid-template-columns:54px minmax(0,1fr);gap:10px}.cart-item .remove-btn{grid-column:2;justify-self:start;padding:2px 0}.cart-thumb{height:54px}}
+/* VOID department image fix */
+.department {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #08090b;
+}
+
+.department::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.department.clothing::before {
+  background-image:
+    linear-gradient(rgba(5, 5, 7, 0.35), rgba(5, 5, 7, 0.65)),
+    url("./T-SHIRT-1.jpg");
+  background-position: center 35%;
+}
+
+.department-footwear::before {
+  background-image:
+    linear-gradient(rgba(5, 5, 7, 0.35), rgba(5, 5, 7, 0.65)),
+    url("./SHOES-1.jpg");
+  background-position: center 55%;
+}
+
+.department > * {
+  position: relative;
+}
