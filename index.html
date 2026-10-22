@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090c">
+  <meta name="description" content="VOID — Streetwear. Built for your everyday rotation.">
+  <title>VOID — Streetwear Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-view="entrance">
+
+  <!-- TOP NAVIGATION -->
+  <header class="topbar">
+    <a class="wordmark" href="#" id="homeLogo" aria-label="VOID home">
+      VOID<span>.</span>
+    </a>
+
+    <div class="topnote">STREETWEAR / DROP 001</div>
+
+    <div class="top-actions">
+      <button class="info-button" id="infoOpen" aria-label="Information">
+        ⓘ
+      </button>
+
+      <button class="cart-button" id="cartOpen" aria-label="Open shopping bag">
+        BAG <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ENTRANCE SCREEN -->
+    <section class="intro door-landing" id="intro">
+
+      <div
+        class="store-scene"
+        id="storeScene"
+        aria-label="VOID streetwear store entrance"
+      >
+
+        <!-- VOID CHARACTER: BEHIND THE TITLE -->
+        <img
+          class="void-character"
+          src="Thunderbolts-void-sentry.webp"
+          alt=""
+          aria-hidden="true"
+        >
+
+        <!-- STORE CAMERA / DOORS -->
+        <div class="camera-rig" id="cameraRig">
+
+          <div class="scene-glow"></div>
+
+          <div class="store-sign">
+            VOID<span>.</span>
+            <small>STREET GOODS</small>
+          </div>
+
+          <div class="store-interior">
+
+            <div class="interior-neon">
+              NEW DROP<br>
+              <b>001</b>
+            </div>
+
+            <div class="rack rack-left">
+              <i></i><i></i><i></i><i></i>
+            </div>
+
+            <div class="shoe-wall">
+              <b>FOOTWEAR</b>
+              <div>▰　▰　▰</div>
+              <div>▰　▰　▰</div>
+              <div>▰　▰　▰</div>
+            </div>
+
+            <div class="counter"></div>
+            <div class="floor"></div>
+
+          </div>
+
+          <div class="door door-left">
+            <div class="door-glass"></div>
+            <div class="door-handle"></div>
+          </div>
+
+          <div class="door door-right">
+            <div class="door-glass"></div>
+            <div class="door-handle"></div>
+          </div>
+
+          <div class="door-frame"></div>
+
+        </div>
+
+        <!-- TITLE: KEEP THIS AFTER THE CAMERA RIG -->
+        <button
+          class="door-cta"
+          id="enterBtn"
+          aria-label="Enter the VOID store"
+        >
+          <span class="door-cta-eyebrow">YOUR NEXT UNIFORM</span>
+
+          <strong>
+            ENTER<br>
+            THE VOID<span>.</span>
+          </strong>
+
+          <small>CLICK TO ENTER ↗</small>
+        </button>
+
+        <div class="scene-label">
+          VOID STREET GOODS · EST. 001
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STORE / PICK A SIDE -->
+    <section class="shop" id="shop">
+
+      <div class="shop-topline">
+        <button
+          class="back-link"
+          id="backToEntrance"
+          aria-label="Back to entrance"
+        >
+          ← BACK TO ENTRANCE
+        </button>
+
+        <span class="eyebrow">VOID STREET GOODS · DROP 001</span>
+      </div>
+
+      <!-- PICK A SIDE -->
+      <div class="pick-stage" id="pickStage">
+
+        <div class="section-heading" id="pickHeading">
+          <div>
+            <p class="eyebrow">WELCOME INSIDE</p>
+            <h2>PICK A <span>SIDE.</span></h2>
+          </div>
+
+          <p class="section-sub">
+            Choose clothing or sneakers to explore the collection.
+          </p>
+        </div>
+
+        <div class="departments">
+
+          <button
+            class="department clothing"
+            data-category="clothing"
+            aria-label="Shop clothing"
+          >
+            <span class="department-num">01 — APPAREL</span>
+            <span class="department-icon">✳</span>
+            <strong>CLOTHING</strong>
+            <span class="department-bottom">
+              TEES · HOODIES · PANTS <b>↗</b>
+            </span>
+          </button>
+
+          <button
+            class="department footwear"
+            data-category="shoes"
+            aria-label="Shop sneakers"
+          >
+            <span class="department-num">02 — FOOTWEAR</span>
+            <span class="department-icon">◒</span>
+            <strong>SNEAKERS</strong>
+            <span class="department-bottom">
+              SNEAKERS · DAILY ROTATION <b>↗</b>
+            </span>
+          </button>
+
+        </div>
+
+        <!-- NEW DROP FEATURE -->
+        <section class="new-drop" aria-label="New drop highlights">
+          <div class="new-drop-copy">
+            <p class="eyebrow">JUST LANDED / 001</p>
+            <h3>NEW DROP<span>.</span></h3>
+            <p>Fresh pieces. Everyday rotation. Find your next uniform.</p>
+          </div>
+          <button class="new-drop-cta" type="button" id="newDropShop">EXPLORE THE DROP <span>↗</span></button>
+          <div class="new-drop-index">VOID / 001</div>
+        </section>
+      </div>
+
+      <!-- PRODUCT COLLECTION -->
+      <div class="collection" id="collection">
+
+        <div class="collection-heading">
+
+          <div>
+            <button
+              class="back-link"
+              id="backToSides"
+              aria-label="Back to Pick a Side"
+            >
+              ← BACK TO PICK A SIDE
+            </button>
+
+            <p class="eyebrow" id="collectionEyebrow">
+              THE FIRST DROP
+            </p>
+
+            <h2 id="collectionTitle">
+              Selected <span>pieces.</span>
+            </h2>
+          </div>
+
+          <div class="filters">
+            <button class="filter active" data-filter="all">ALL</button>
+            <button class="filter" data-filter="clothing">APPAREL</button>
+            <button class="filter" data-filter="shoes">FOOTWEAR</button>
+            <button class="filter favorites-toggle" id="favoritesToggle" type="button" aria-pressed="false">SAVED ♥ <span id="favoritesCount">0</span></button>
+          </div>
+
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+      </div>
+    </section>
+
+  </main>
+  
+
+
+
+  <!-- PRODUCT QUICK VIEW -->
+  <div class="product-modal-backdrop" id="productModalBackdrop"></div>
+  <section class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProductName" aria-hidden="true">
+    <button class="product-modal-close" id="productModalClose" aria-label="Close product details">×</button>
+    <div class="product-modal-image-wrap"><img id="modalProductImage" src="" alt=""></div>
+    <div class="product-modal-details">
+      <p class="product-modal-kicker" id="modalProductType">VOID / DROP 001</p>
+      <h2 id="modalProductName">Product name</h2>
+      <p class="product-modal-price" id="modalProductPrice"></p>
+      <p class="product-modal-description">Choose your size before adding this piece to your bag.</p>
+      <label for="modalProductSize" id="modalSizeLabel">SELECT SIZE</label>
+      <select id="modalProductSize" required>
+        <option value="" selected disabled>Choose a size</option>
+      </select>
+      <button class="primary-btn product-modal-add" id="modalAddToCart" type="button">ADD TO BAG <span>↗</span></button>
+      <p class="product-modal-note">Demo store · no real payments</p>
+    </div>
+  </section>
+
+  <!-- SHOPPING BAG -->
+ 
+  <!-- CUSTOMER REVIEWS -->
+  <section class="reviews-section" id="reviews">
+    <div class="reviews-heading">
+      <p class="eyebrow">THE VOID COMMUNITY</p>
+      <h2>YOUR VOICE<span>.</span></h2>
+      <p>Real thoughts. Real people. Your experience with VOID.</p>
+    </div>
+
+    <div class="reviews-layout">
+      <form id="reviewForm" class="review-form">
+        <h3>LEAVE A REVIEW<span>.</span></h3>
+
+        <label for="reviewName">YOUR NAME</label>
+        <input
+          type="text"
+          id="reviewName"
+          name="reviewName"
+          placeholder="Enter your name"
+          maxlength="60"
+          required
+        >
+
+        <label for="reviewRating">YOUR RATING</label>
+        <select id="reviewRating" name="reviewRating" required>
+          <option value="5" selected>★★★★★ — Excellent</option>
+          <option value="4">★★★★☆ — Very good</option>
+          <option value="3">★★★☆☆ — Good</option>
+          <option value="2">★★☆☆☆ — Fair</option>
+          <option value="1">★☆☆☆☆ — Poor</option>
+        </select>
+
+        <label for="reviewText">YOUR EXPERIENCE</label>
+        <textarea
+          id="reviewText"
+          name="reviewText"
+          placeholder="Tell us what you think..."
+          rows="5"
+          maxlength="1000"
+          required
+        ></textarea>
+
+        <button type="submit" class="primary-btn">
+          SUBMIT REVIEW ↗
+        </button>
+
+        <p class="review-note">
+          Demo only — reviews are saved in this browser. No account or server is connected.
+        </p>
+      </form>
+
+      <div class="reviews-feed">
+        <div class="reviews-feed-heading">
+          <h3>COMMUNITY REVIEWS</h3>
+          <span>VOID / 001</span>
+        </div>
+
+        <div id="reviewList" class="review-list">
+          <p class="reviews-empty">
+            No reviews yet. Be the first to share your experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATMOSPHERIC FOOTER -->
+<footer class="void-footer">
+  <div class="footer-glow"></div>
+
+  <div class="footer-main">
+    <a class="wordmark footer-logo" href="#" aria-label="VOID home">
+      VOID<span>.</span>
+    </a>
+
+    <div class="footer-message">
+      <span class="footer-kicker">STREETWEAR / DROP 001</span>
+      <p>BUILT FOR YOUR EVERYDAY ROTATION.</p>
+    </div>
+
+    <div class="footer-status">
+      <span class="status-dot"></span>
+      <span>DEMO STORE · NO REAL PAYMENTS</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>VOID® — INDEPENDENT STREETWEAR</span>
+    <a href="#reviews">JOIN THE COMMUNITY ↗</a>
+    <span>EST. 001 / ALWAYS IN ROTATION</span>
+  </div>
+</footer>
+
+  <!-- SHOPPING BAG -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag">
+    <div class="cart-head">
+      <div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag<span>.</span></h2></div>
+      <button id="cartClose" class="close-btn" aria-label="Close shopping bag" type="button">×</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your bag is empty.<br>Find something that feels like you.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="subtotal"><span>SUBTOTAL</span><strong id="subtotal">€0.00</strong></div>
+      <button class="primary-btn checkout-btn" id="checkoutBtn" type="button">CONTINUE TO CHECKOUT ↗</button>
+      <p>Demo only — checkout and payments are not connected.</p>
+    </div>
+  </aside>
+
+  <!-- INFORMATION PANEL -->
+  <div class="info-backdrop" id="infoBackdrop"></div>
+  <aside class="info-drawer" id="infoDrawer" aria-label="Store information">
+    <button id="infoClose" class="close-btn" aria-label="Close information" type="button">×</button>
+    <p class="eyebrow">ABOUT VOID</p>
+    <h2>Built for your <span>everyday rotation.</span></h2>
+    <p>Streetwear essentials. One identity. The VOID universe.</p>
+  </aside>
+
+  <!-- STATUS MESSAGE -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
