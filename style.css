@@ -1504,3 +1504,49 @@ body[data-view="leaving"] .door-landing .store-scene { inset: 0 !important; }
 .department > * {
   position: relative;
 }
+
+/* VOID — Mobile layout refinements */
+@media (max-width: 600px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body[data-view="pick"] .shop {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  body[data-view="pick"] .pick-stage {
+    width: 100%;
+    min-width: 0;
+  }
+
+  body[data-view="pick"] .departments {
+    width: 100%;
+    min-width: 0;
+    gap: 16px;
+  }
+
+  body[data-view="pick"] .department {
+    width: 100%;
+    min-width: 0;
+    min-height: 300px;
+  }
+
+  body[data-view="pick"] .department strong {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  body[data-view="pick"] .department-icon {
+    pointer-events: none;
+  }
+
+  body[data-view="pick"] .new-drop-cta {
+    max-width: 100%;
+    white-space: normal;
+  }
+}
+
