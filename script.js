@@ -86,8 +86,12 @@ function renderProducts() {
   productGrid.innerHTML = list.map((p) => `<article class="product-card" data-product="${p.id}" tabindex="0" role="button" aria-label="View ${p.name}">
    <div class="product-art product-image-wrap" style="background:radial-gradient(ellipse at 50% 35%,${p.color},#171a20 72%)">
     ${p.tag ? `<span class="product-tag">${p.tag}</span>` : ""}
-    <button class="favorite-btn ${favorites.includes(p.id) ? "is-favorite" : ""}" data-favorite="${p.id}" aria-label="${favorites.includes(p.id) ? "Remove" : "Save"} ${p.name} ${favorites.includes(p.id) ? "from" : "to"} favorites" aria-pressed="${favorites.includes(p.id)}">♥</button>
-    <img class="product-image" src="${p.image}" alt="${p.name}" loading="lazy">
+<button
+  class="favorite-btn ${favorites.includes(p.id) ? "is-favorite" : ""}"
+  data-favorite="${p.id}"
+  aria-label="${favorites.includes(p.id) ? "Remove" : "Save"} ${p.name} ${favorites.includes(p.id) ? "from" : "to"} favorites"
+  aria-pressed="${favorites.includes(p.id)}"
+>${favorites.includes(p.id) ? "♥" : "♡"}</button>    <img class="product-image" src="${p.image}" alt="${p.name}" loading="lazy">
    </div>
    <div class="product-info"><p class="product-type">${p.type}</p><p class="product-name">${p.name}</p><div class="product-bottom"><span class="price">${euro(p.price)}</span><button class="add-btn" data-add="${p.id}" aria-label="View sizes for ${p.name}">+</button></div></div>
   </article>`).join("");
