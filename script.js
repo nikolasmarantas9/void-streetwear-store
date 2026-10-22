@@ -390,8 +390,23 @@ document.querySelector("#reviewForm").addEventListener("submit", (event) => {
 renderSavedReviews();
 
 const favoritesToggle = document.querySelector("#favoritesToggle");
-if (favoritesToggle) favoritesToggle.addEventListener("click", () => {
-  showFavoritesOnly = !showFavoritesOnly;
-  renderProducts();
-  if (showFavoritesOnly) toast("Showing your saved pieces.");
-});
+
+if (favoritesToggle) {
+  favoritesToggle.addEventListener("click", () => {
+    showFavoritesOnly = !showFavoritesOnly;
+
+    // Always show all categories while viewing saved products.
+    if (showFavoritesOnly) {
+      activeFilter = "all";
+      document.querySelectorAll(".filter").forEach((f) => {
+        f.classList.toggle("active", f.dataset.filter === "all");
+      });
+    }
+
+    renderProducts();
+
+    if (showFavoritesOnly) {
+      toast("Showing your saved pieces.");
+    }
+  });
+}
