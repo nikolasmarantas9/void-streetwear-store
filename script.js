@@ -81,8 +81,17 @@ function updateCollectionCopy(filter) {
 }
 
 function renderProducts() {
-  let list = activeFilter === "all" ? products : products.filter((p) => p.category === activeFilter);
-  if (showFavoritesOnly) list = list.filter((p) => favorites.includes(p.id));
+ let list;
+
+if (showFavoritesOnly) {
+  // Show all saved products, regardless of category.
+  list = products.filter((p) => favorites.includes(p.id));
+} else {
+  // Apply the selected category filter normally.
+  list = activeFilter === "all"
+    ? products
+    : products.filter((p) => p.category === activeFilter);
+}
   productGrid.innerHTML = list.map((p) => `<article class="product-card" data-product="${p.id}" tabindex="0" role="button" aria-label="View ${p.name}">
    <div class="product-art product-image-wrap" style="background:radial-gradient(ellipse at 50% 35%,${p.color},#171a20 72%)">
     ${p.tag ? `<span class="product-tag">${p.tag}</span>` : ""}
