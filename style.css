@@ -1391,15 +1391,19 @@ body[data-view="leaving"] .door-landing .store-scene { inset: 0 !important; }
              linear-gradient(0deg,rgba(5,6,8,.92),transparent 65%);
   pointer-events:none;
 }
-.department.clothing::before {
-    background-image: url('./T-SHIRT-1.jpg');
+
+.department.clothing {
+    background-image: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.65)), url('./T-SHIRT-1.jpg');
+    background-size: cover;
     background-position: center 35%;
 }
 
-.department.footwear::before {
-    background-image: url('./SHOES-1.jpg');
+.department.footwear {
+    background-image: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.65)), url('./SHOES-1.jpg');
+    background-size: cover;
     background-position: center 55%;
 }
+
 .department:hover::before { transform:scale(1.075); opacity:.78; }
 .department-num { display:inline-flex; position:relative; z-index:1; padding:8px 10px; background:rgba(7,8,10,.62); border:1px solid rgba(255,255,255,.13); backdrop-filter:blur(8px); }
 .department-icon { z-index:0; color:rgba(213,255,63,.42); text-shadow:0 0 28px rgba(213,255,63,.14); }
